@@ -6,7 +6,7 @@ import base64
 
 
 def generar_llave_con_hash(llave):
-    # Usamos SHA-256 para generar una llave de 32 bytes a partir de la llave proporcionada
+    # Usamos SHA-256 para generar una llave de 32 bytes a partir de la llave
     return hashlib.sha256(llave.encode("utf-8")).digest()
 
 

@@ -6,7 +6,7 @@ import base64
 
 
 def generar_llave_con_hash(llave):
-    # Usamos SHA-256 para generar una llave de 32 bytes a partir de la llave proporcionada
+    # Usamos SHA-256 para generar una llave de 32 bytes a partir de la llave
     return hashlib.sha256(llave.encode("utf-8")).digest()
 
 
@@ -24,7 +24,7 @@ def encriptar(texto, llave):
     # Encriptar el texto
     texto_encriptado = cipher.encrypt(texto_pad)
 
-    # Convertir el resultado a una cadena representable (en base64 para visualización)
+    # Convertir el resultado a una cadena representable
     return base64.b64encode(texto_encriptado)
 
 

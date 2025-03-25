@@ -1,4 +1,3 @@
-import pytest
 import hashlib
 from encriptador import encriptar
 from desencriptador import desencriptar
@@ -33,4 +32,4 @@ def test_generar_llave_con_hash():
 
     assert len(hash_llave1) == 32
     assert len(hash_llave2) == 32
-    assert hash_llave1 != hash_llave2  # Las llaves generadas deben ser diferentes
+    assert hash_llave1 != hash_llave2
