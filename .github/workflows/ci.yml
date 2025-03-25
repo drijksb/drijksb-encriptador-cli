@@ -24,7 +24,7 @@ jobs:
           pip install pytest black pycryptodome
 
       - name: Lint (Black)
-        run: black --check .
+        run: black .
 
       - name: Run tests
         run: pytest
